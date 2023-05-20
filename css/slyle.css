@@ -50,6 +50,11 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   max-width: 1200px;
   padding-right: 15px;
@@ -139,7 +144,7 @@ header {
 }
 
 .email::before:hover,
-.phone::before:hover{
+.phone::before:hover {
   background-color: var(--style-color);
 }
 
@@ -160,11 +165,6 @@ header {
 
 /* --------------header--------------- */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* --------------hero--------------- */
 
 .hero {
@@ -179,8 +179,8 @@ header {
       rgba(47, 48, 58, 0.4)
     ),
     url(/images/hero.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px; 
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -218,18 +218,19 @@ header {
 .principles-list {
   display: flex;
   justify-content: center;
-  align-items: center;
+ 
 }
 
 .principles-item {
   margin-right: 30px;
+  align-items: center;
 }
 
 .principles-item:last-child {
   margin-right: 0;
 }
 
-.principles-item::before{
+/* .principles-item::before{
   content: "";
   display: block;
   height: 120px;
@@ -253,7 +254,7 @@ background-image: url(/images/principle1.svg);
 
 .technology::before{
   background-image: url(/images/principles-4.svg);
-}
+} */
 
 .principles-title {
   color: var(--title-color);
@@ -272,6 +273,11 @@ background-image: url(/images/principle1.svg);
   letter-spacing: 0.03em;
 }
 
+.principles-icon {
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+}
 
 /* --------------principles--------------- */
 
@@ -395,6 +401,10 @@ background-image: url(/images/principle1.svg);
   fill: var(--white-color);
 }
 
+/* --------------team--------------- */
+
+/* --------------  clients  --------------- */
+
 .clients {
 }
 
@@ -421,7 +431,7 @@ background-image: url(/images/principle1.svg);
 }
 
 .clients-link {
-  display: block; 
+  display: block;
 }
 
 .client-icon {
@@ -433,10 +443,10 @@ background-image: url(/images/principle1.svg);
 
 .client-icon:hover {
   fill: var(--style-color);
-  border:1px solid var(--style-color);
+  border: 1px solid var(--style-color);
 }
 
-/* --------------team--------------- */
+/* --------------  clients  --------------- */
 
 /* -------------filter-------------- */
 .filter-list {
@@ -523,6 +533,20 @@ background-image: url(/images/principle1.svg);
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-div-child {
+}
+
+.footer-div-child:not(:last-child) {
+  margin-right: 70px;
 }
 
 .logotype {
@@ -546,4 +570,43 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+}
+
+.actions-footer-div {
+}
+
+.actions-div-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.sociallinks-list {
+  display: flex;
+  align-items: center;
+}
+
+.sociallinks-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.sociallinks-item {
+  margin-right: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+}
+
+.sociallinks-item:hover {
+  background-color: var(--style-color);
+}
+
+.sociallinks-icon {
+  height: 44px;
+  width: 44px;
+  fill: var(--white-color);
+  border-radius: 50%;
 }
