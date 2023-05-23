@@ -616,7 +616,8 @@ footer {
   border-radius: 50%;
 }
 
-.sociallinks-item:hover {
+.sociallinks-item:hover, 
+.sociallinks-item:focus{
   background-color: var(--style-color);
 }
 
