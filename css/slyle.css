@@ -618,8 +618,9 @@ footer {
 
 .sociallinks-item:hover, 
 .sociallinks-item:focus{
-  background-color: var(--style-color);
+  background-color: var(--style-color); 
 }
+
 
 .sociallinks-icon {
   height: 44px;
