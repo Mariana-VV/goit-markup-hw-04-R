@@ -139,10 +139,15 @@ header {
 }
 
 .contact-icon{
-  fill:var(--main-color);
+  fill:currentColor;
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--style-color);
 }
 
 /* .contact-link::before {
@@ -167,11 +172,6 @@ header {
   background-color: var(--style-color);
 } */
 
-.contact-hover:hover,
-.contact-hover:focus {
-  color: var(--style-color);
-  fill:var(--style-color);
-}
 
 
 /* --------------header--------------- */
