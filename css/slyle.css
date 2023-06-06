@@ -50,7 +50,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+ width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -182,6 +182,10 @@ fill:currentColor;  /* берет от предка текущий цвет те
 /* --------------hero--------------- */
 
 .hero {
+width: 1600px;
+margin-right: auto;
+margin-left: auto;
+
   background-color: var(--hero-bg-color);
   background-position: center;
   background-size: cover;
@@ -249,6 +253,17 @@ fill:currentColor;  /* берет от предка текущий цвет те
   margin-right: 30px;
 }
 
+.principles-div{
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondery-bg-color);
+  display: flex;
+  align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+
 
 /* .principles-item::before{
   content: "";
@@ -297,9 +312,8 @@ background-image: url(/images/principle1.svg);
 }
 
 .principles-icon {
-  height: 120px;
-  width: 270px;
-  margin-bottom: 30px;
+  height: 70px;
+  width: 70px;
 }
 
 /* --------------principles--------------- */
@@ -382,7 +396,8 @@ background-image: url(/images/principle1.svg);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 0;
+  margin-top: 30px;
+
 }
 
 .team-text {
@@ -392,47 +407,56 @@ background-image: url(/images/principle1.svg);
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
-.team-div {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
 .actions-list {
   display: flex;
-  align-items: center;
-  padding-top: 16px;
-  padding-bottom: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
+  justify-content: center;
+  gap:10px;
 }
 
 .actions-item {
+  
 }
 
 .actions-link {
-  display: block;
-  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  
+  fill: #fff;
 }
 
-.actions-link:hover {
+.actions-link:hover,
+.actions-link:focus {
   background-color: var(--style-color);
+    
 }
+
 
 .actions-icon {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   fill: var(--actions-color);
 }
 
-.actions-icon:hover {
-  fill: var(--white-color);
+.actions-icon:hover
+{
+  fill:#fff; 
+  
 }
+
+.actions-icon:focus
+{
+  fill:#fff; 
+}
+
 
 /* --------------team--------------- */
 
@@ -449,15 +473,22 @@ background-image: url(/images/principle1.svg);
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .clients-list {
   display: flex;
   text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .clients-item {
+ 
   margin-right: 30px;
+  width: 170px;
+  height: 90px;
+  
 }
 
 .clients-item:last-child {
@@ -465,19 +496,31 @@ background-image: url(/images/principle1.svg);
 }
 
 .clients-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--actions-color);
+  fill: var(--actions-color);
+  
+}
+
+.clients-link:hover,
+.clients-link:focus
+{
+  border: 1px solid var(--style-color);
 }
 
 .client-icon {
-  border: 1px solid var(--actions-color);
-  fill: var(--actions-color);
-  width: 170px;
-  height: 92px;
+  fill:  var(--actions-color);
+  width: 106px;
+  height: 60px;
 }
 
 .client-icon:hover {
   fill: var(--style-color);
-  border: 1px solid var(--style-color);
 }
 
 /* --------------  clients  --------------- */
@@ -513,6 +556,7 @@ background-image: url(/images/principle1.svg);
 .filter-btn:focus {
   background-color: var(--style-color);
   color: var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /* --------------filter--------------- */
 
@@ -530,11 +574,15 @@ background-image: url(/images/principle1.svg);
   margin-left: var(--portfolio-gap);
   margin-top: var(--portfolio-gap);
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
 }
 
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.portfolio-link:hover{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .portfolio-title {
@@ -563,6 +611,8 @@ background-image: url(/images/principle1.svg);
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
 }
+
+
 /* ------------  portfolio  ------------ */
 
 /* -------------  Footer  ----------- */
@@ -579,7 +629,7 @@ footer  .logotype{
 
 .footer-div {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-div-child {
@@ -627,13 +677,15 @@ footer  .logotype{
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .sociallinks-list {
   display: flex;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
 .sociallinks-item:not(:last-child) {
@@ -641,19 +693,30 @@ footer  .logotype{
 }
 
 .sociallinks-item {
-  margin-right: 10px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 50%;
 }
 
-.sociallinks-item:hover, 
-.sociallinks-item:focus{
+.social-link:hover, 
+.social-link:focus{
   background-color: var(--style-color); 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.social-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px; 
+  border-radius: 50%;
+  background-color:rgba(	255,255,255, 0.1)
+  
 }
 
 .sociallinks-icon {
-  height: 44px;
-  width: 44px;
+ width: 12px;
+ height: 12px;
   fill: var(--white-color);
-  border-radius: 50%;
+  
 }
