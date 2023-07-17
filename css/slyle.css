@@ -388,6 +388,11 @@ background-image: url(/images/principle1.svg);
   margin-right: 0;
 }
 
+.team-div{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
   color: var(--primary-title-color);
   font-weight: 500;
@@ -396,7 +401,7 @@ background-image: url(/images/principle1.svg);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 30px;
+ 
 
 }
 
@@ -433,9 +438,12 @@ background-image: url(/images/principle1.svg);
   fill: #fff;
 }
 
-.actions-link:hover,
-.actions-link:focus {
-  background-color: var(--style-color);
+.actions-link:hover{
+  background-color:var(--style-color);
+}
+
+.actions-link:hover .actions-icon {
+fill: var(--white-color);
     
 }
 
@@ -507,10 +515,15 @@ background-image: url(/images/principle1.svg);
   
 }
 
-.clients-link:hover,
-.clients-link:focus
-{
+.clients-link:hover, .clients-link:focus{
   border: 1px solid var(--style-color);
+}
+
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon
+{
+  fill: var(--style-color);
+  
 }
 
 .client-icon {
@@ -556,7 +569,7 @@ background-image: url(/images/principle1.svg);
 .filter-btn:focus {
   background-color: var(--style-color);
   color: var(--white-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /* --------------filter--------------- */
 
@@ -581,8 +594,13 @@ background-image: url(/images/principle1.svg);
   margin-right: 0;
 }
 
-.portfolio-link:hover{
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.portfolio-link{
+  display: block;
+}
+
+.portfolio-link:hover, 
+.portfolio-link:focus{
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .portfolio-title {
@@ -715,8 +733,8 @@ footer  .logotype{
 }
 
 .sociallinks-icon {
- width: 12px;
- height: 12px;
+ width: 20px;
+ height: 20px;
   fill: var(--white-color);
   
 }
