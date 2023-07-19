@@ -401,7 +401,7 @@ background-image: url(/images/principle1.svg);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
- 
+ margin-top: 0;
 
 }
 
@@ -438,7 +438,8 @@ background-image: url(/images/principle1.svg);
   fill: #fff;
 }
 
-.actions-link:hover{
+.actions-link:hover,
+.actions-link:focus{
   background-color:var(--style-color);
 }
 
@@ -563,7 +564,7 @@ fill: var(--white-color);
 .filter-btn:focus {
   background-color: var(--style-color);
   color: var(--white-color);
-  box-shadow: drop-shadow(0px 2px 2px 0px rgba(0, 0, 0, 0.12));
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 /* --------------filter--------------- */
 
@@ -594,7 +595,7 @@ fill: var(--white-color);
 
 .portfolio-link:hover, 
 .portfolio-link:focus{
-  box-shadow: drop-shadow(0px 2px 2px 0px rgba(0, 0, 0, 0.12));
+  box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
@@ -711,7 +712,7 @@ footer  .logotype{
 .social-link:hover, 
 .social-link:focus{
   background-color: var(--style-color); 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow:0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .social-link {
